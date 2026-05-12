@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Josue Maldonado - WDD131</title>
+    <meta name="author" content="Josue Maldonado">
+    <link rel="stylesheet" href="styles/base.css">
 </head>
+
 <body>
-    <h1>WDD 131 - Josue Maldonado</h1>
+   <header>
+        <div class="top-header">
+            <h1>WDD 131: Dynamic Web Fundamentals</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">I-Learn</a></li>
+                <li><a href="#">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="main-title">Josue D. Maldonado</h2>
+
+        <div class="grid-container">
+            <section class="card about-card">
+                <h3>About Me</h3>
+                <div class="card-content">
+                    <div class="profile-intro">
+                        <p>My name is Josue. I was born in San Pedro Sula, Honduras, but I moved to Salt Lake City about five years ago. I am currently studying Software Development. I also work as a manager for a company that sells automotive paint and body shop supplies. In my free time, I love playing soccer with my friends and watching football matches.</p>
+                        <img src="images/profile.jpeg" alt="Josue D. Maldonado" class="profile-img">
+                    </div>
+                    
+                    <h4>San Pedro Sula, Honduras</h4>
+                    <hr>
+                    
+                    <div class="country-info">
+                        <figure>
+                            <img src="images/flag.png" alt="Official Flag of Honduras" class="country-flag">
+                            <figcaption>Official Flag of Honduras</figcaption>
+                        </figure>
+                        <p>Honduras is a vibrant country located in the heart of Central America. It is famous for its rich history, including the ancient Mayan ruins of Copán, and its stunning natural beauty, such as the Bay Islands and its lush rainforests. The country is a top producer of high-quality coffee and is known for the warmth and hospitality of its people.</p>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="card resources-card">
+                <h3>Web Dev Resources</h3>
+                <div class="card-content">
+                    <ul>
+                        <li><a href="#">Dev.to Community</a></li>
+                        <li><a href="#">Smashing Magazine</a></li>
+                        <li><a href="#">CSS Tricks</a></li>
+                        <li><a href="#">W3 Schools</a></li>
+                        <li><a href="#">Udemy</a></li>
+                        <li><a href="#">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 🏔️ Josue Maldonado 🏔️ San Pedro Sula, Honduras</p>
+        <p id="lastModified">Last Modification: <span id="current-date"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
