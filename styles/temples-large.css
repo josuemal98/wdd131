@@ -1,0 +1,38 @@
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 15px;
+}
+
+nav a {
+    width: auto;
+    text-align: left;
+}
+
+.temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+figure img {
+    transition: transform 0.3s ease;
+}
+
+figure:hover img {
+    transform: scale(1.02);
+}
