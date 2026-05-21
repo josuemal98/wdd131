@@ -32,7 +32,7 @@ header {
 }
 
 #menu-toggle {
-    background: none;
+    background: red;
     border: none;
     color: #ffffff;
     font-size: 1.8rem;
