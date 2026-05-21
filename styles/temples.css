@@ -32,9 +32,9 @@ header {
 }
 
 #menu-toggle {
-    background: red;
+    background: none;
     border: none;
-    color: #ffffff;
+    color: rgb(0, 200, 255);
     font-size: 1.8rem;
     cursor: pointer;
     display: block;
