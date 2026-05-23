@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellowstone National Park</title>
+    <meta name="description" content="Discover the wonders of Yellowstone National Park, including geysers, hot springs, and diverse wildlife. Plan your visit today!">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Yellowstone National Park</h1>
+    </header>
+
+    <main class="hero-container">
+        <picture class="hero-image">
+            <source media="(min-width: 800px)" srcset="images/hero-large.webp">
+            <img src="images/hero-small.webp" alt="Yellowstone Grand Prismatic Spring" loading="lazy">
+        </picture>
+
+        <section class="card data-card">
+            <h2>About Yellowstone</h2>
+            <ul>
+                <li><strong>Established:</strong> March 1, 1872</li>
+                <li><strong>Area:</strong> 8,983 sq km</li>
+                <li><strong>Main State:</strong> Wyoming</li>
+                <li><strong>Type:</strong> National Park</li>
+                <li><strong>Famous Feature:</strong> Old Faithful Geyser</li>
+                <li><strong>Wildlife:</strong> Bison, Wolves, Bears</li>
+                <li><strong>Visitors:</strong> ~4 Million / year</li>
+                <li><strong>UNESCO World Heritage:</strong> 1978</li>
+            </ul>
+        </section>
+
+        <section class="card weather-card">
+           <h2 class="weather-heading">Weather </h2>
+
+    
+            <div class="weather-icon-mobile">
+
+                <img src="images/weather-icon.svg" alt="Weather Icon" width="60">
+            </div>
+
+            <ul>
+
+                <li><strong>Temperature:</strong> <span id="temp">40</span> °F</li>
+                <li><strong>Conditions:</strong> Cloudy & Misty</li>
+                <li><strong>Wind:</strong> <span id="wind">10</span> mph</li>
+                <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+    <p>&copy; <span id="currentyear">2026</span> 🏔️ Josue Maldonado 🏔️ Herriman, Utah</p>
+    <p class="lastModified">  Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
