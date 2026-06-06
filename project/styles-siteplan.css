@@ -85,6 +85,18 @@ h3 {
     border-radius: 4px;
 }
 
+.orange-box {
+    background-color: #E65100;
+}
+
+.gray-box {
+    background-color: #F4F6F7;
+}
+
+.white-box {
+    background-color: #FFFFFF;
+}
+
 .wireframe-box {
     background-color: var(--light-gray);
     border: 2px dashed #95A5A6;
