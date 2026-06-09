@@ -1,0 +1,132 @@
+:root {
+    --soft-orange: #D35400; 
+    --gray-bg: #DCD6CD;     
+    --light-gray: #EAECEE;  
+    --text-color: #1C2833;
+    --white: #FFFFFF;
+    --border: #A6ACAF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--gray-bg);
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: var(--soft-orange);
+    color: var(--white);
+    padding: 15px;
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto 15px auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+main {
+    max-width: 450px;
+    margin: 0 auto;
+    background: var(--light-gray);
+    padding: 20px;
+    border: 1px solid var(--border);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.sub-label {
+    display: block;
+    font-style: italic;
+    font-size: 0.85rem;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+
+.optional {
+    color: #2471A3;
+    font-size: 0.85rem;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border);
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+
+.rating-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.rating-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.rating-item input {
+    margin-top: 5px;
+}
+
+.checkbox-list label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.checkbox-list input {
+    margin-right: 8px;
+}
+
+.btn {
+    background-color: #E5E7E9;
+    color: var(--text-color);
+    padding: 10px;
+    border: 1px solid var(--border);
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #BDC3C7;
+}
+
+footer {
+    background-color: var(--soft-orange);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    max-width: 450px;
+    margin: 15px auto 0 auto;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 4px 0;
+}

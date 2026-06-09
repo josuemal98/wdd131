@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Review Confirmed</title>
+    <meta name="author" content="Josue Maldonado">
+    <meta name="description" content="Confirmation page for the review.">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+
+    <main>
+        <h2>Submission Complete</h2>
+        <p>Thank you for your time. Your review helps our company.</p>
+        
+        <div style="background: white; padding: 10px; border: 1px solid #A6ACAF; margin: 15px 0;">
+            <p>Total reviews submitted by you: <strong id="counter">0</strong></p>
+        </div>
+
+        <p><a href="form.html" style="color: #D35400; font-weight: bold; text-decoration: none;">Submit another review</a></p>
+    </main>
+
+    <footer>
+    <p>&copy; <span id="currentyear">2026</span> 🏔️ Josue Maldonado 🏔️ Herriman, Utah</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+  </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            
+            let count = localStorage.getItem("reviewsCount");
+            
+            if (count === null) {
+                count = 0;
+            } else {
+                count = parseInt(count);
+            }
+
+            count = count + 1;
+            localStorage.setItem("reviewsCount", count);
+            document.getElementById("counter").textContent = count;
+
+            
+            document.getElementById("reviewModified").textContent = document.lastModified;
+        });
+    </script>
+</body>
+</html>
