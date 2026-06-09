@@ -130,3 +130,16 @@ footer {
 footer p {
     margin: 4px 0;
 }
+
+
+@media (min-width: 600px) {
+    main {
+        max-width: 550px; 
+        padding: 30px;    
+        margin-top: 30px;
+    }
+    
+    header, footer {
+        max-width: 550px; 
+    }
+}

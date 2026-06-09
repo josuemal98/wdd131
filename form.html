@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Review Form</title>
     <meta name="author" content="Josue Maldonado">
-    <meta name="description" content="A simple review form for class project.">
+    <meta name="description" content="Product review form for Wasatch Performance Coatings. Leave your opinion here.">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head>
@@ -20,51 +20,63 @@
         <form method="get" action="review.html">
             
             <div class="form-group">
-                <label for="product-name">Product Name</label>
+                <label for="product-name">Product Name *</label>
                 <select id="product-name" name="productName" required>
-                    <option value="" disabled selected>Choose a Product ...</option>
+                    <option value="" disabled selected>Select a Product ...</option>
                 </select>
             </div>
 
-            <div class="form-group">
-                <label>Overall Rating</label>
+           <div class="form-group">
+                <label>Overall Rating *</label>
                 <div class="rating-box">
                     <div class="rating-item">
-                        <span>☆</span>
-                        <input type="radio" name="rating" value="1" required>
+                        <label for="rate-1">☆</label>
+                        <input type="radio" id="rate-1" name="rating" value="1" required>
                     </div>
                     <div class="rating-item">
-                        <span>☆☆</span>
-                        <input type="radio" name="rating" value="2" required>
+                        <label for="rate-2">☆☆</label>
+                        <input type="radio" id="rate-2" name="rating" value="2" required>
                     </div>
                     <div class="rating-item">
-                        <span>☆☆☆</span>
-                        <input type="radio" name="rating" value="3" required>
+                        <label for="rate-3">☆☆☆</label>
+                        <input type="radio" id="rate-3" name="rating" value="3" required>
                     </div>
                     <div class="rating-item">
-                        <span>☆☆☆☆</span>
-                        <input type="radio" name="rating" value="4" required>
+                        <label for="rate-4">☆☆☆☆</label>
+                        <input type="radio" id="rate-4" name="rating" value="4" required>
                     </div>
                     <div class="rating-item">
-                        <span>☆☆☆☆☆</span>
-                        <input type="radio" name="rating" value="5" required>
+                        <label for="rate-5">☆☆☆☆☆</label>
+                        <input type="radio" id="rate-5" name="rating" value="5" required>
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="install-date">Date of Installation</label>
+                <label for="install-date">Date of Installation *</label>
                 <input type="date" id="install-date" name="installDate" required>
             </div>
 
-            <div class="form-group">
+          <div class="form-group">
                 <label>Which features did you find useful in the product?</label>
                 <span class="sub-label">(Check all that apply)</span>
                 <div class="checkbox-list">
-                    <label><input type="checkbox" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" name="features" value="easy"> Easy of Use</label>
-                    <label><input type="checkbox" name="features" value="performance"> Performance</label>
-                    <label><input type="checkbox" name="features" value="design"> Design</label>
+                    <div class="check-item">
+                        <input type="checkbox" id="feat-durability" name="features" value="durability">
+                        <label for="feat-durability">Durability</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="feat-easy" name="features" value="easy">
+                        <label for="feat-easy">Easy of Use</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="feat-performance" name="features" value="performance">
+                        <label for="feat-performance">Performance</label>
+                    </div>
+                    <div class="check-item">
+                        <input type="checkbox" id="feat-design" name="features" value="design">
+                        <label for="feat-design">Design</label>
+                    </div>
                 </div>
             </div>
 
